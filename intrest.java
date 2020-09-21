@@ -1,22 +1,23 @@
-class demo1
+class intrest
 {
-    int num1,num2,ans;
+    double P,r,t,I;
     void init()
     {
-        num1=5;
-        num2=6;
+        P=2000;
+        r=5;
+        t=5;
     }
     void calc()
     {
-        ans=num1+num2;
+        I=(P*r*t)/100;
     }
     void display()
     {
-        System.out.println(ans);
+        System.out.println(I);
     }
     public static void main()
     {
-        demo1 obj=new demo1();
+        intrest obj=new intrest();
         obj.init();
         obj.calc();
         obj.display();

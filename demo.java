@@ -1,10 +1,15 @@
-class demo//called by blue j object
+public class demo
 {
-    void init()//non parameterized metod,void,called,prototype,single method
+    void init()
     {
-        int num1=5;//body
+        int num1=5;
         int num2=6;
-        int ans= num1+num2;
-        System.out.println("The result is "+ans);
+        int ans=num1+num2;
+        System.out.println("the result is "+ans);
+    }
+    public static void main()
+    {
+        demo obj=new demo();
+        obj.init();
     }
 }

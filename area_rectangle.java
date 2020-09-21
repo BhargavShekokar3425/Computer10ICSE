@@ -1,22 +1,22 @@
-class demo1
+class area_rectangle
 {
-    int num1,num2,ans;
+    double l,b,area;
     void init()
     {
-        num1=5;
-        num2=6;
+        l=10;
+        b=20;
     }
     void calc()
     {
-        ans=num1+num2;
+        area=l*b;
     }
     void display()
     {
-        System.out.println(ans);
+        System.out.println(area);
     }
     public static void main()
     {
-        demo1 obj=new demo1();
+        area_rectangle obj=new area_rectangle();
         obj.init();
         obj.calc();
         obj.display();
