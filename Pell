@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Pell
+{
+void display()
+{
+int n,a=1,b=0,c;
+System.out.println("First 15 Pell numbers: ");
+for(n=1; n<=15; n++)
+{
+c= a + 2*b;
+System.out.print(c+" ");
+a = b;
+b = c;
+}
+}
+public static void main(String args[]) /*the main method to
+execute the program*/
+
+{
+Pell obj = new Pell(); //calling the object
+obj.display();
+}
+}
