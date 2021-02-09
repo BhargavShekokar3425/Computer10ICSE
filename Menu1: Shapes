@@ -1,0 +1,63 @@
+import java.util.Scanner;
+public class Menu1{
+void generateMenu()
+{
+    System.out.println("What would you like to do?");
+    System.out.println("1-Volume of Sphere,2-Volume of Cylinder,3-Cone Volume");
+    System.out.println("Press any other integer other than 1,2,3 to exit");
+}
+void Sphere()
+{
+    Scanner sc=new Scanner(System.in);
+    double Volume;
+    int radius;
+    System.out.println("Enter radius");
+    radius=sc.nextInt();
+    Volume=(4/3)*(22/7)*radius*radius*radius;
+    System.out.println("Volume of Sphere is"+ Volume);
+}
+void Cylinder()
+{
+    Scanner sc=new Scanner(System.in);
+    double Volume;
+    int radius,height;
+    System.out.println("Enter radius");
+    radius=sc.nextInt();
+    System.out.println("Enter height");
+    height=sc.nextInt();
+    Volume=(22/7)*radius*radius*height;
+    System.out.println("Volume of Sphere is"+ Volume);
+}
+void Cone()
+{
+       Scanner sc=new Scanner(System.in);
+    double Volume;
+    int radius,height;
+    System.out.println("Enter radius");
+    radius=sc.nextInt();
+    System.out.println("Enter height");
+    height=sc.nextInt();
+    Volume=(1/3)*(22/7)*radius*radius*height;
+    System.out.println("Volume of Sphere is"+ Volume);
+}
+     public static void main(){
+    Menu1 obj=new Menu1();
+    Scanner o= new Scanner(System.in);
+    int choice, choice1;
+    do{
+        obj.generateMenu();
+        System.out.println("Enter choice");
+        choice=o.nextInt();
+        if(choice==1)
+        obj.Sphere();
+        else if(choice==2)
+        obj.Cylinder();
+        else if(choice==3)
+        obj.Cone();
+        else
+        return;
+    System.out.println("Would you like to continue, if yes press 1 ");
+    choice1=o.nextInt();
+     }while(choice1==1);
+    }
+}
