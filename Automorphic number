@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class Automorphic
+{
+n=0;
+}
+void input()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the number");
+n=sc.nextInt();
+}
+void check()
+{
+int a=0,temp=n;
+while(temp!=0)
+{
+a=a+1;
+temp=temp/10;
+}
+int b=Math.pow(n,2);
+int last_digits=b%(Math.pow(10,a));
+if(n==last_digits)
+System.out.println("Automorphic number");
+else
+System.out.println("Not automorphic number");
+}
+public static void main()
+{
+Automorphic obj=new Automorphic();
+obj.input();
+obj.check();
+}
+}
