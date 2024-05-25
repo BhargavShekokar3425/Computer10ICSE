@@ -5,7 +5,7 @@ class series3
     void input()
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter number of terms");
+        System.out.println("Enter number of terms");// this is to enter the number of terms
         n=sc.nextInt();
         sc.close();
     }
